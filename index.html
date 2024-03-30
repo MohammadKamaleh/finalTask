@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Information Form</title>
+<link rel="stylesheet" href="style.css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/css/intlTelInput.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <h1 class="mt-4 mb-3">User Information Form</h1>
+        <form id="userForm">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="fname">First name<span class="text-danger"> *</span></label>
+              <input type="text" class="form-control" id="fname" name="fname" placeholder="Enter your first name" required>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="lname">Last name<span class="text-danger"> *</span></label>
+              <input type="text" class="form-control" id="lname" name="lname" placeholder="Enter your last name" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="email">Email<span class="text-danger"> *</span></label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="mob">Phone number<span class="text-danger"> *</span></label>
+              <input type="tel" class="form-control" id="mob" name="mob" placeholder="Enter your phone number" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="dob">Date of Birth<span class="text-danger"> *</span></label>
+              <input type="date" class="form-control" id="dob" name="dob" placeholder="YYYY-MM-DD" required>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="gender">Gender<span class="text-danger"> *</span></label>
+              <select class="form-control" id="gender" name="gender" required>
+                <option value="">Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="address">Address (Max 100 characters)</label>
+            <textarea class="form-control" id="address" rows="3" maxlength="100" name="address" placeholder="Enter your address" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="button" class="btn btn-secondary mt-2" id="clearBtn">Clear</button>
+        </form>
+        <div id="cardContainer" class="mt-4"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput.min.js"></script>
+<script src="index.js"></script>
+  
+</body>
+</html>
